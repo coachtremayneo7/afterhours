@@ -16,10 +16,11 @@
 <!-- Public key: public_key_f780754fa1ff0314fe219 -->
 <!-- The widget's own floating "Speak with the front desk" button -->
 <!-- (bottom-right) is the call-to-action. One tap starts the call. -->
-<!-- Key is locked to coachtremayne.com, so it only works on the live -->
-<!-- page there — not when opening the file locally. -->
-<!-- To hide "Powered by Retell", add data-white-label="YOUR_TOKEN" -->
-<!-- once Retell gives you a white-label token. -->
+<!-- Page now lives on afterhoursfrontdesk.com. The public key must -->
+<!-- allow that domain in the Retell dashboard (Keys), or the widget -->
+<!-- won't load. It also won't work when opening the file locally. -->
+<!-- White-label token is installed below (data-white-label), so -->
+<!-- "Powered by Retell" is hidden on the live page. -->
 <!-- =================================================================== -->
 <script
 id="retell-widget"
@@ -32,6 +33,7 @@ data-bot-name="Serenity Front Desk"
 data-fab-text="Front desk"
 data-theme-color="#16302E"
 data-component-color="#C99A5B"
+data-white-label="rT_1c6e4d9g8i0a5b3f2j7h_kL"
 data-show-ai-popup="false"
 data-auto-open="false"
 ></script>
@@ -319,3 +321,4 @@ Tap &ldquo;Front desk&rdquo; to start a live call.
 
 </body>
 </html>
+
